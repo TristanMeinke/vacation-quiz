@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation Suggestor</title>
+    <link href = "css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href = "css/styles.css" rel="stylesheet" type="text/css">
+    <script src = "js/jquery-3.1.0.js"></script>
+    <script src = "js/bootstrap.min.js"></script>
+    <script src = "js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id = "vacation-quiz">
+        <form>
+          <div class = "jumbotron">
+            <h1>Where do you want to vacation?</h1>
+          </div>
+
+          <div class="jumbotron" id = "question2">
+            <h2>Hot weather, or cold weather?</h2>
+            <div class = "row">
+              <div class = "col-sm-6 india">
+                <button type = "button" class = "btn btn-select"><h4>Blazing!  The hotter, the better.</h4></button>
+              </div>
+              <div class="col-sm-6 hawaii">
+                <button type = "button" class = "btn btn-select"><h4>On the warmer side.</h4></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 canada">
+                  <button type = "button" class = "btn btn-select"><h4>On the cooler side.</h4></button>
+              </div>
+              <div class="col-sm-6 denmark">
+                  <button type = "button" class = "btn btn-select"><h4>Frigid.  I want to do some ice fishing while I'm away.</h4></button>
+              </div>
+
+            </div> <!-- Closes Row-->
+          </div> <!-- Closes Jumbotron-->
+
+          <div class="jumbotron" id="question3">
+            <h2>What was your favorite class in school?</h1>
+            <div class="row">
+              <div class="col-sm-6 canada">
+                <button type = "button" class = "btn btn-select"><h4>French</h4></button>
+              </div>
+              <div class="col-sm-6 denmark">
+                <button type = "button" class = "btn btn-select"><h4>Danish</h4></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 india">
+                <button type = "button" class = "btn btn-select"><h4>Hindi</h4></button>
+              </div>
+              <div class="col-sm-6 hawaii">
+                <button type = "button" class = "btn btn-select"><h4>I didn't take any of those languages!</h4></button>
+              </div>
+            </div> <!-- Closes Row-->
+          </div> <!-- Closes Jumbotron-->
+
+          <div class="jumbotron" id="question4">
+            <h2>Are you going to be travelling alone, your family, with a single partner or firend, or with a group?</h2>
+            <div class="row">
+              <div class="col-sm-6 hawaii">
+                <button type = "button" class = "btn btn-select"><h4>I'm going on an adventure by myself.</h4></button>
+              </div>
+              <div class="col-sm-6 kirk">
+                <button type = "button" class = "btn btn-select"><h4>I'll be going with my family</h4></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 sisko">
+                <button type = "button" class = "btn btn-select"><h4>Seeing the world with a partner.</h4></button>
+              </div>
+              <div class="col-sm-6 janeway">
+                <button type = "button" class = "btn btn-select"><h4>Traveling with a group</h4></button>
+              </div>
+            </div> <!-- Closes Row-->
+          </div> <!-- Closes Jumbotron-->
+
+          <!-- Submit Button -->
+          <div class = "jumbotron" id = "submission">
+            <button type = "submit" id = "submit-form" class = "btn btn-block btn-select"><h2>Submit Answers!</h2></button>
+          </div>
+
+        </form> 
+
+        <!-- Results are displayed in the following block. -->
+        <div class = "jumbotron" id = "results">
+          <div id = "results-india">
+            <h1>Consider:</h1>
+            <img src = "img/indian-flag.jpg" />
+            <h1>India!</h1>
+            <p></p>
+          </div>
+
+          <div id = "results-denmark">
+            <h1>Consider:</h1>
+            <img src = "img/danish-flag.png" />
+            <h1>Denmark!</h1>
+            <p></p>
+          </div>
+
+          <div id = "results-canada">
+            <h1>Consider:</h1>
+            <img src = "img/canadian-flag.jpg" />
+            <h1>Canada!</h1>
+            <p></p>
+          </div>
+
+          <div id = "results-hawaii">
+            <h1>Consider:</h1>
+            <img src = "img/us-flag.jpg" />
+            <h1>Hawaii!</h1>
+            <p></p>
+          </div>
+
+          <div id = "results-japan">
+            <h1>Consider:</h1>
+            <img src = "img/japanese-flag.jpg" />
+            <h1>Japan!</h1>
+            <p></p>
+          </div>
+        </div>
+
+      </div>  <!-- Closes quiz ID-->
+    </div> <!-- Closes Container -->
+  </body>
+</html>

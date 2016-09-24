@@ -1,0 +1,130 @@
+
+/* ***Bootstrap Styling Modifications and Additions */
+
+.btn {
+  background-color: #CBC0FE;
+  border-radius: 0px;
+
+  -moz-background-image: -moz-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
+  -webkit-background-image: -webkit-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
+  background-image: linear-gradient(to bottom left, #CBC0FE 0%, #6753C9 100%);
+  background-image-slice: 1;
+
+}
+.btn:active {background-color: #8A62D5;}
+
+.btn-select {
+  border: solid 3px #000;
+  box-shadow: 3px 5px 16px 0 #404040;
+}
+
+.btn-select:hover { box-shadow: 0px 0px 30px 0px #3F0885;}
+.btn-select:active { box-shadow: 0px 0px 0px 0px; margin-left: 3px; margin-top: 5px;}
+
+.btn-submit {
+  align: center;
+}
+
+.jumbotron {
+  background-color: #A9A9A9;
+  color: #000;
+  
+  text-align: center;
+  
+  margin: 10px;
+  margin-bottom: 24px;
+  padding: 30px;
+
+  border-radius: 0px;
+  border: solid 24px #818182;
+
+  /* The following block adds a gradient to the borders*/
+  -moz-border-image: -moz-linear-gradient(top right, #A7A6A6 0%, #323232 100%);
+  -webkit-border-image: -webkit-linear-gradient(top right, #A7A6A6 0%, #323232 100%);
+  border-image: linear-gradient(to bottom left, #A7A6A6 0%, #323232 100%);
+  border-image-slice: 1;
+  
+}
+
+.row {
+  margin: 14px;
+}
+
+/* ***HTML Tags*** */
+
+body {
+  background-color: #000;
+  font-family: futura;
+}
+
+h2 {
+  padding-bottom: 6px;
+}
+
+img {
+  
+  padding: 10px;
+  width: 75%;
+  align-content: center;
+  align-items: center;
+  border: solid #000 5px;
+  margin: 3px;
+  /*border-radius: 30px;*/
+  box-shadow: 3px 5px 16px 0px #404040;
+
+  /*background-color: #CBC0FE;*/
+  -moz-background-image: -moz-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
+  -webkit-background-image: -webkit-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
+  background-image: linear-gradient(to bottom left, #CBC0FE 0%, #6753C9 100%);
+  background-image-slice: 1;
+}
+
+input {
+  padding: 10px;
+  width: 75%;
+  align-content: center;
+  align-items: center;
+  border: solid #000 5px;
+  margin: 3px;
+  /*border-radius: 30px;*/
+  box-shadow: 3px 5px 16px 0px #404040;
+
+  /*background-color: #CBC0FE;*/
+  -moz-background-image: -moz-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
+  -webkit-background-image: -webkit-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
+  background-image: linear-gradient(to bottom left, #CBC0FE 0%, #6753C9 100%);
+  background-image-slice: 1;
+}
+
+input:hover {box-shadow: 0px 0px 60px 0px #3F0885; margin-right: 3px; margin-bottom: 5px;}
+input:active { box-shadow: 0px 0px 0px 0px; background-color: #8A62D5;}
+
+/* ***Relevant IDs*** */
+
+#output {
+  text-align: center;
+}
+
+#results {
+  display: none;
+}
+
+#results-denmark {
+  display: none;
+}
+
+#results-hawaii {
+  display: none;
+}
+
+#results-india {
+  display: none;
+}
+
+#results-japan {
+  display: none;
+}
+
+#results-canada {
+  display: none;
+}
