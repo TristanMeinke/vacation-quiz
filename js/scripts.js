@@ -13,24 +13,37 @@ $(document).ready(function() {
 
     $("#results").show();
 
-    if (denmarkCounter > hawaiiCounter && denmarkCounter > indiaCounter && denmarkCounter > canadaCounter) {
+    if (denmarkCounter > hawaiiCounter && denmarkCounter > indiaCounter && denmarkCounter > canadaCounter) 
+    {
       $("#results-denmark").show();
 
       event.preventDefault();
     }
-    else if (hawaiiCounter > denmarkCounter && hawaiiCounter > indiaCounter && hawaiiCounter > canadaCounter) {
+    else if (hawaiiCounter > denmarkCounter && hawaiiCounter > indiaCounter && hawaiiCounter > canadaCounter) 
+    {
       $("#results-hawaii").show();
       event.preventDefault();
     }
-    else if (indiaCounter > denmarkCounter && indiaCounter > hawaiiCounter && indiaCounter > canadaCounter) {
+    else if (indiaCounter > denmarkCounter && indiaCounter > hawaiiCounter && indiaCounter > canadaCounter) 
+    {
       $("#results-india").show();
       event.preventDefault();
     }
-    else if (canadaCounter > denmarkCounter && canadaCounter > hawaiiCounter && canadaCounter > indiaCounter) {
+    else if (canadaCounter > denmarkCounter && canadaCounter > hawaiiCounter && canadaCounter > indiaCounter) 
+    {
       $("#results-canada").show();
       event.preventDefault();
     }
-    else {
+    else if (canadaCounter === denmarkCounter || canadaCounter === hawaiiCounter || canadaCounter === indiaCounter 
+            || denmarkCounter === hawaiiCounter || denmarkCounter === indiaCounter 
+            || hawaiiCounter === indiaCounter) 
+    {
+      // This condition is to eliminate ties.
+      $("#results-japan").show();
+      event.preventDefault();
+    }
+    else 
+    {
       $("#results-japan").show();
       event.preventDefault();
     }

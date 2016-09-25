@@ -2,24 +2,23 @@
 /* ***Bootstrap Styling Modifications and Additions */
 
 .btn {
-  background-color: #CBC0FE;
+  /*background-color: #c9c9c9;*/
   border-radius: 0px;
 
-  -moz-background-image: -moz-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
-  -webkit-background-image: -webkit-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
-  background-image: linear-gradient(to bottom left, #CBC0FE 0%, #6753C9 100%);
+  -moz-background-image: -moz-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
+  -webkit-background-image: -webkit-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
+  background-image: linear-gradient(to bottom left, #c9c9c9 0%, #6f6f6f 100%);
   background-image-slice: 1;
 
 }
-.btn:active {background-color: #8A62D5;}
+.btn:active {background-color: #474747;}
 
 .btn-select {
-  border: solid 3px #000;
-  box-shadow: 3px 5px 16px 0 #404040;
+  border: solid 1px #000;
 }
 
-.btn-select:hover { box-shadow: 0px 0px 30px 0px #3F0885;}
-.btn-select:active { box-shadow: 0px 0px 0px 0px; margin-left: 3px; margin-top: 5px;}
+.btn-select:hover { margin-right: 3px; margin-bottom: 5px; box-shadow: 3px 5px 16px 0 #404040;}
+.btn-select:active { box-shadow: 0px 0px 0px 0px; margin-right: 0px; margin-bottom: 0px;}
 
 .btn-submit {
   align: center;
@@ -53,8 +52,8 @@
 /* ***HTML Tags*** */
 
 body {
-  background-color: #000;
-  font-family: futura;
+  background-color: #3E3E3E;
+  font-family: baskerville;
 }
 
 h2 {
@@ -72,10 +71,10 @@ img {
   /*border-radius: 30px;*/
   box-shadow: 3px 5px 16px 0px #404040;
 
-  /*background-color: #CBC0FE;*/
-  -moz-background-image: -moz-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
-  -webkit-background-image: -webkit-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
-  background-image: linear-gradient(to bottom left, #CBC0FE 0%, #6753C9 100%);
+  /*background-color: #c9c9c9;*/
+  -moz-background-image: -moz-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
+  -webkit-background-image: -webkit-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
+  background-image: linear-gradient(to bottom left, #c9c9c9 0%, #6f6f6f 100%);
   background-image-slice: 1;
 }
 
@@ -89,10 +88,10 @@ input {
   /*border-radius: 30px;*/
   box-shadow: 3px 5px 16px 0px #404040;
 
-  /*background-color: #CBC0FE;*/
-  -moz-background-image: -moz-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
-  -webkit-background-image: -webkit-linear-gradient(top right, #CBC0FE 0%, #6753C9 100%);
-  background-image: linear-gradient(to bottom left, #CBC0FE 0%, #6753C9 100%);
+  /*background-color: #c9c9c9;*/
+  -moz-background-image: -moz-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
+  -webkit-background-image: -webkit-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
+  background-image: linear-gradient(to bottom left, #c9c9c9 0%, #6f6f6f 100%);
   background-image-slice: 1;
 }
 
