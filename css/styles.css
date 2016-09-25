@@ -1,27 +1,53 @@
 
 /* ***Bootstrap Styling Modifications and Additions */
 
+/* GENERAL BUTTONS */
+
 .btn {
-  /*background-color: #c9c9c9;*/
+  /*background-color: #c1c1c1;*/
   border-radius: 0px;
-
-  -moz-background-image: -moz-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
-  -webkit-background-image: -webkit-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
-  background-image: linear-gradient(to bottom left, #c9c9c9 0%, #6f6f6f 100%);
-  background-image-slice: 1;
-
 }
 .btn:active {background-color: #474747;}
+.btn:focus, .btn:active {
 
-.btn-select {
-  border: solid 1px #000;
+  /* Eliminates the default blue outline when the button is clicked. */
+  outline: none !important;
 }
-
-.btn-select:hover { margin-right: 3px; margin-bottom: 5px; box-shadow: 3px 5px 16px 0 #404040;}
-.btn-select:active { box-shadow: 0px 0px 0px 0px; margin-right: 0px; margin-bottom: 0px;}
 
 .btn-submit {
   align: center;
+}
+
+/* CUSTOM BUTTONS */
+/* This block handles the general SELECTOR buttons*/
+
+.btn-select {
+  border: solid 1px #000;
+
+  -moz-background-image: -moz-linear-gradient(top left, #c9c9c9 0%, #6f6f6f 100%);
+  -webkit-background-image: -webkit-linear-gradient(top left, #c9c9c9 0%, #6f6f6f 100%);
+  background-image: linear-gradient(to bottom right, #c9c9c9 0%, #6f6f6f 100%);
+  background-image-slice: 1;
+}
+.btn-select:hover { margin-right: 3px; margin-bottom: 5px; box-shadow: 3px 5px 16px 0 #404040;}
+.btn-select:active { box-shadow: 0px 0px 0px 0px; margin-right: 0px; margin-bottom: 0px;}
+
+/* This block handles the IMAGE BUTTONS */
+
+.btn-image {
+  border: solid 1px #A9A9A9;
+  background-color: #A9A9A9;
+}
+.btn-image:active {
+  background-color: #A9A9A9;
+  /* Eliminates the appearance of pressing the button object that surrounds
+  the image to which that appearance has been deferred.*/
+  box-shadow: 0px 0px 0px 0px;
+}
+.btn-image:active > img {
+  box-shadow: 0px 0px 0px 0px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 .jumbotron {
@@ -34,13 +60,15 @@
   margin-bottom: 24px;
   padding: 30px;
 
+  box-shadow: 4px 6px 18px 0px #000;
+  outline: solid #000 1px;
   border-radius: 0px;
   border: solid 24px #818182;
 
   /* The following block adds a gradient to the borders*/
-  -moz-border-image: -moz-linear-gradient(top right, #A7A6A6 0%, #323232 100%);
-  -webkit-border-image: -webkit-linear-gradient(top right, #A7A6A6 0%, #323232 100%);
-  border-image: linear-gradient(to bottom left, #A7A6A6 0%, #323232 100%);
+  -moz-border-image: -moz-linear-gradient(top left, #A9A8A8 0%, #323232 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #A9A8A8 0%, #323232 100%);
+  border-image: linear-gradient(to bottom right, #A9A8A8 0%, #323232 100%);
   border-image-slice: 1;
   
 }
@@ -63,7 +91,10 @@ h2 {
 img {
 
   padding: 10px;
+  margin-right: 3px; margin-bottom: 5px;
   width: 75%;
+
+
   align-content: center;
   align-items: center;
   border: solid #000 5px;
@@ -71,38 +102,14 @@ img {
   /*border-radius: 30px;*/
   box-shadow: 3px 5px 16px 0px #404040;
 
-  /*background-color: #c9c9c9;*/
-  -moz-background-image: -moz-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
-  -webkit-background-image: -webkit-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
-  background-image: linear-gradient(to bottom left, #c9c9c9 0%, #6f6f6f 100%);
+  /*background-color: #c1c1c1;*/
+  -moz-background-image: -moz-linear-gradient(top left, #c1c1c1 0%, #6f6f6f 100%);
+  -webkit-background-image: -webkit-linear-gradient(top left, #c1c1c1 0%, #6f6f6f 100%);
+  background-image: linear-gradient(to bottom right, #c1c1c1 0%, #6f6f6f 100%);
   background-image-slice: 1;
 }
-
-input {
-  padding: 10px;
-  /*width: 75%;*/
-  align-content: center;
-  align-items: center;
-  border: solid #000 5px;
-  /*margin: 3px;*/
-  /*border-radius: 30px;*/
-  box-shadow: 3px 5px 16px 0px #404040;
-
-  /*background-color: #c9c9c9;*/
-  -moz-background-image: -moz-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
-  -webkit-background-image: -webkit-linear-gradient(top right, #c9c9c9 0%, #6f6f6f 100%);
-  background-image: linear-gradient(to bottom left, #c9c9c9 0%, #6f6f6f 100%);
-  background-image-slice: 1;
-}
-
-input:hover {box-shadow: 0px 0px 60px 0px #3F0885; margin-right: 3px; margin-bottom: 5px;}
-input:active { box-shadow: 0px 0px 0px 0px; background-color: #8A62D5;}
 
 /* ***Relevant IDs*** */
-
-#output {
-  text-align: center;
-}
 
 #results {
   display: none;
