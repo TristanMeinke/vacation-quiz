@@ -62,13 +62,13 @@ h2 {
 }
 
 img {
-  
+
   padding: 10px;
   width: 75%;
   align-content: center;
   align-items: center;
   border: solid #000 5px;
-  margin: 3px;
+  /*margin: 3px;*/
   /*border-radius: 30px;*/
   box-shadow: 3px 5px 16px 0px #404040;
 
@@ -81,11 +81,11 @@ img {
 
 input {
   padding: 10px;
-  width: 75%;
+  /*width: 75%;*/
   align-content: center;
   align-items: center;
   border: solid #000 5px;
-  margin: 3px;
+  /*margin: 3px;*/
   /*border-radius: 30px;*/
   box-shadow: 3px 5px 16px 0px #404040;
 
@@ -127,4 +127,12 @@ input:active { box-shadow: 0px 0px 0px 0px; background-color: #8A62D5;}
 
 #results-canada {
   display: none;
+}
+
+#danish-castle {
+  float: right;
+}
+
+#hawaiian-sunset {
+  float: right;
 }
