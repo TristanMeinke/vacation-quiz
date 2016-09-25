@@ -20,23 +20,19 @@
           <div class="jumbotron" id="question1">
             <h2>Which view do you want to see on the first day of your vacation?</h2>
             <div class="row">
-              <div class="col-sm-6 canada">
-                <!-- <input type = "image" id = "canadian-lake" img class="img-responsive"  img src="img/banff.jpg" alt="AMountain Lake" /> -->
-                <button type = "button" class = "btn btn-image" id ="canadian-lake"><img src = "img/banff.jpg"></button>
+              <div class="col-sm-6 denmark">
+                <button type = "button" class = "btn btn-image" id ="danish-castle"><img src = "img/copenhagen-castle-garden.jpg"></button>
               </div>
               <div class="col-sm-6 hawaii">
-               <!--  <input type = "image" id = "hawaiian-sunset" img class="img-responsive" img src="img/hawaii-sunset.jpg" alt="A Sunset" /> -->
                <button type = "button" class = "btn btn-image" id ="hawaiian-sunset"><img src = "img/hawaii-sunset.jpg"></button>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 india">
-                <!-- <input type = "image" id = "golden-temple" img class="img-responsive" img src="img/sri-harmandir-sahib-temples.jpg" alt="A Temple" /> -->
                 <button type = "button" class = "btn btn-image" id ="golden-temple"><img src = "img/sri-harmandir-sahib-temples.jpg"></button>
               </div>
-              <div class="col-sm-6 denmark">
-                <!-- <input type = "image" id = "danish-castle" img class="img-responsive"  img src="img/copenhagen-castle-garden.jpg" alt="A Castle Garden" /> -->
-                <button type = "button" class = "btn btn-image" id ="danish-castle"><img src = "img/copenhagen-castle-garden.jpg"></button>
+              <div class="col-sm-6 canada">
+                <button type = "button" class = "btn btn-image" id ="canadian-lake"><img src = "img/banff.jpg"></button>
               </div>
             </div> <!-- Closes Row-->
           </div> <!-- Closes Jumbotron-->
@@ -45,18 +41,18 @@
             <h2>Hot weather, or cold weather?</h2>
             <div class = "row">
               <div class = "col-sm-6 india">
-                <button type = "button" class = "btn btn-select"><h4>Blazing!  The hotter, the better.</h4></button>
+                <button type = "button" class = "btn btn-select" id = "hot"><h4>Blazing!  The hotter, the better.</h4></button>
               </div>
               <div class="col-sm-6 hawaii">
-                <button type = "button" class = "btn btn-select"><h4>On the warmer side.</h4></button>
+                <button type = "button" class = "btn btn-select" id = "warm"><h4>Something on the warmer side.</h4></button>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 canada">
-                  <button type = "button" class = "btn btn-select"><h4>On the cooler side.</h4></button>
+                  <button type = "button" class = "btn btn-select" id = "cool"><h4>Maybe a bit cooler, if I had to pick.</h4></button>
               </div>
               <div class="col-sm-6 denmark">
-                  <button type = "button" class = "btn btn-select"><h4>Frigid.  I want to do some ice fishing while I'm away.</h4></button>
+                  <button type = "button" class = "btn btn-select" id = "cold"><h4>Frigid.  I want to do some ice fishing while I'm away.</h4></button>
               </div>
 
             </div> <!-- Closes Row-->
@@ -68,16 +64,16 @@
               <div class="col-sm-6 canada">
                 <button type = "button" class = "btn btn-select"><h4>French</h4></button>
               </div>
-              <div class="col-sm-6 denmark">
-                <button type = "button" class = "btn btn-select"><h4>Danish</h4></button>
-              </div>
-            </div>
-            <div class="row">
               <div class="col-sm-6 india">
                 <button type = "button" class = "btn btn-select"><h4>Hindi</h4></button>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 denmark">
+                <button type = "button" class = "btn btn-select"><h4>Danish</h4></button>
+              </div>
               <div class="col-sm-6 hawaii">
-                <button type = "button" class = "btn btn-select"><h4>I didn't take any of those languages!</h4></button>
+                <button type = "button" class = "btn btn-select"><h4>I never learned any of those languages!</h4></button>
               </div>
             </div> <!-- Closes Row-->
           </div> <!-- Closes Jumbotron-->
@@ -85,8 +81,8 @@
           <div class="jumbotron" id="question4">
             <h2>Are you going to be travelling alone, your family, with a single partner or firend, or with a group?</h2>
             <div class="row">
-              <div class="col-sm-6 hawaii">
-                <button type = "button" class = "btn btn-select"><h4>I'm going on an adventure by myself.</h4></button>
+              <div class="col-sm-6 denmark">
+                <button type = "button" class = "btn btn-select"><h4>Traveling with a group</h4></button>
               </div>
               <div class="col-sm-6 canada">
                 <button type = "button" class = "btn btn-select"><h4>I'll be going with my family</h4></button>
@@ -96,11 +92,77 @@
               <div class="col-sm-6 india">
                 <button type = "button" class = "btn btn-select"><h4>Seeing the world with a partner.</h4></button>
               </div>
-              <div class="col-sm-6 denmark">
-                <button type = "button" class = "btn btn-select"><h4>Traveling with a group</h4></button>
+              <div class="col-sm-6 hawaii">
+                <button type = "button" class = "btn btn-select"><h4>I'm going on an adventure by myself.</h4></button>
               </div>
             </div> <!-- Closes Row-->
           </div> <!-- Closes Jumbotron-->
+
+          
+          <div class="jumbotron" id="question5">
+            <h2>Choose a hotel:</h2>
+            <div class="row">
+              <div class="col-sm-6 canada">
+                <button type = "button" class = "btn btn-image"><img src = "img/canada-hotel.jpg"></button>
+              </div>
+              <div class="col-sm-6 denmark">
+               <button type = "button" class = "btn btn-image"><img src = "img/denmark-hotel.jpg"></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 hawaii">
+                <button type = "button" class = "btn btn-image"><img src = "img/hawaii-hotel.jpg"></button>
+              </div>
+              <div class="col-sm-6 india">
+                <button type = "button" class = "btn btn-image"><img src = "img/india-hotel.jpg"></button>
+              </div>
+            </div> <!-- Closes Row-->
+          </div> <!-- Closes Jumbotron-->
+
+
+          <div class="jumbotron" id="question6">
+            <h2>What is your yearly household income?</h2>
+            <div class="row">
+              <div class="col-sm-6 canada">
+                <button type = "button" class = "btn btn-select"><h4>$20,000-$40,000</h4></button>
+              </div>
+              <div class="col-sm-6 hawaii">
+                <button type = "button" class = "btn btn-select"><h4>$40,001-$60,000</h4></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 india">
+                <button type = "button" class = "btn btn-select"><h4>$60,001-$90,000</h4></button>
+              </div>
+              <div class="col-sm-6 denmark">
+                <button type = "button" class = "btn btn-select"><h4>Over $90,000</h4></button>
+              </div>
+            </div> <!-- Closes Row-->
+          </div> <!-- Closes Jumbotron-->
+
+
+          <div class="jumbotron" id = "question7">
+            <h2>How do you prefer to travel?</h2>
+            <div class = "row">
+              <div class = "col-sm-6 canada">
+                <button type = "button" class = "btn btn-select"><h4>By car!</h4></button>
+              </div>
+              <div class="col-sm-6 india">
+                  <button type = "button" class = "btn btn-select"><h4>By train!</h4></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 denmark">
+                <button type = "button" class = "btn btn-select"><h4>By bus!</h4></button>
+              </div>
+              <div class="col-sm-6 hawaii">
+                  <button type = "button" class = "btn btn-select"><h4>By plane!</h4></button>
+              </div>
+
+            </div> <!-- Closes Row-->
+          </div> <!-- Closes Jumbotron-->
+
+
 
           <!-- Submit Button -->
           <div class = "jumbotron" id = "submission">
