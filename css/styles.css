@@ -59,9 +59,9 @@
 .jumbotron {
   background-color: #A9A9A9;
   color: #000;
-  
+
   text-align: center;
-  
+
   margin: 10px;
   margin-bottom: 24px;
   padding: 30px;
@@ -76,7 +76,7 @@
   -webkit-border-image: -webkit-linear-gradient(top left, #A9A8A8 0%, #323232 100%);
   border-image: linear-gradient(to bottom right, #A9A8A8 0%, #323232 100%);
   border-image-slice: 1;
-  
+
 }
 
 .row {
@@ -90,8 +90,17 @@ body {
   font-family: baskerville;
 }
 
+h1 {
+  /*font-family: sans-serif;*/
+}
+
+.jumbotron > h1 {
+  font-size: 44pt;
+}
+
 h2 {
   padding-bottom: 6px;
+  /*font-family: sans-serif;*/
 }
 
 img {
@@ -116,6 +125,10 @@ img {
 }
 
 /* ***Relevant IDs*** */
+
+#vacation-quiz {
+  display: none;
+}
 
 #results {
   display: none;
